@@ -1,0 +1,127 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out 0s;
+    background-color: rgb(241, 245, 250);
+}
+
+body {
+    margin-left: 80px;
+    margin-right: 80px;
+    flex-direction: column;
+}
+
+body section {
+    padding-top: 30px;
+}
+
+header {
+    padding: 0px 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 24px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+#about-me {
+    margin-top: 60px;
+    font-size: 1.2rem;
+}
+
+.content {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content div {
+    padding-right: 16px;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.content a:visited{
+    color: black;
+}
+
+.content a:hover{
+    color: royalblue;
+}
+
+.content .logo {
+    font-size: 1.2rem;
+    color: black;
+}
+
+#projects div {
+    display: inline-flex;
+}
+
+.project-card {
+    border: 1px solid royalblue;
+    color: black;
+    background-color: none;
+    border-radius: 5px;
+    width: 17%;
+    min-width: 200px;
+    height: 33%;
+    padding: 8px;
+    margin: 5px;
+    text-align: left;
+    display: inline-flex;
+}
+
+.project-card:hover {
+    color: white;
+    background-color: royalblue;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#skill-container img {
+    filter: grayscale(0%);
+    max-height: 3rem;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+#work-history-container img {
+    width: 3rem;
+    height: 3rem;
+    padding-right: 16px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    text-align: center;
+    margin-top: 40px;
+    width: 80%;
+    bottom: 0px;
+}
+
+@media only screen and (max-width: 895px) {
+    .content a {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        bottom: 0px;
+    }
+}
