@@ -33,6 +33,7 @@ header {
 #about-me {
     margin-top: 60px;
     font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 
 .content {
@@ -79,6 +80,7 @@ header {
     margin: 5px;
     text-align: left;
     display: inline-flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -96,6 +98,11 @@ header {
     max-height: 3rem;
     padding-right: 16px;
     padding-bottom: 16px;
+    transition: transform .2s;
+}
+
+#skill-container img:hover {
+    transform: scale(1.2);
 }
 
 #work-history-container img {
@@ -106,10 +113,8 @@ header {
 
 /* Footer */
 footer {
-    position: fixed;
     text-align: center;
-    margin-top: 40px;
-    width: 80%;
+    margin-top: auto;
     bottom: 0px;
 }
 
